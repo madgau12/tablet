@@ -1,0 +1,155 @@
+/*mobile*/
+@media screen and (min-width: 412px){
+
+
+    .nav_links{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #even{
+        color:navy;
+    }
+    
+    #odd{
+        color: navy;
+        
+    
+    }
+    
+    #nav{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1; 
+    }
+    
+    h1{
+        color: navy;
+        font-family: Arial,sans-serif;
+        text-align: center;
+    
+    }
+    
+    h2{
+        font-family: Arial,sans-serif;
+    }
+    
+    p{
+        font-family: Arial,sans-serif;
+    }
+    
+    .mainpic{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #gallery{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer{
+        background-color: black;
+        color:white;
+        position: relative;
+        bottom:0;
+        margin-left:0;
+        width: 100%;
+        min-height: 75px;
+        padding: 0.5%;
+        font-size: smaller;
+
+    }
+    
+    a{
+        color:black;
+        font-family: Arial,sans-serif;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color:black;
+        font-family: Arial,sans-serif;
+        text-decoration: none;
+    }
+    
+    
+    ul{
+        list-style: none;
+    }
+
+    .active{
+        font-weight: 800;
+        text-decoration: underline;   
+    }
+
+    a:hover{
+        text-decoration: underline;   
+    }
+
+    #ffacts{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .qfacts{
+        font-weight: 700;
+    }
+    #home_caption{
+        color: #2B2D2F;
+    }
+
+    #skipto{
+        visibility: hidden;
+    }
+      
+    #skipto:focus{
+        
+        top:20px;
+        color: black;
+        text-decoration-style: solid;
+    }
+
+
+}
+
+/*tablet*/
+@media screen and (min-width: 720px){
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav{
+        background: skyblue;
+        padding: 0.5%;
+    }
+    #ffacts{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 20px;
+    }
+    .long{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .one{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .two{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        color:skyblue;
+    }
+    .three{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+}
